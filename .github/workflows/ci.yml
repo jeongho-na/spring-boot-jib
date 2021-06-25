@@ -25,6 +25,6 @@ jobs:
         run: chmod +x gradlew
 
       - name: Publish to registry
-        run: ./gradlew jib -Ptag=dev -Dorg.gradle.parallel=true -Djib.to.image=736476159220.dkr.ecr.ap-northeast-2.amazonaws.com/eks-microservice-demo/test
+        run: ./gradlew jib -Ptag=dev -Dorg.gradle.parallel=true -Djib.to.image=736476159220.dkr.ecr.ap-northeast-2.amazonaws.com/eks-microservice-demo/test:1.2
         
         
